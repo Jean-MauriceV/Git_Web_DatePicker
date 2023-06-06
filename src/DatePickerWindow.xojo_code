@@ -4,7 +4,7 @@ Begin WebDialog DatePickerWindow
    ControlCount    =   0
    ControlID       =   ""
    Enabled         =   True
-   Height          =   284
+   Height          =   438
    Index           =   -2147483648
    Indicator       =   0
    LayoutDirection =   0
@@ -19,7 +19,7 @@ Begin WebDialog DatePickerWindow
    TabIndex        =   0
    Top             =   0
    Visible         =   True
-   Width           =   336
+   Width           =   428
    _mDesignHeight  =   0
    _mDesignWidth   =   0
    _mPanelIndex    =   -1
@@ -30,9 +30,9 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   40
       Index           =   -2147483648
-      Indicator       =   1
+      Indicator       =   0
       Left            =   30
       LockBottom      =   False
       LockedInPosition=   False
@@ -43,11 +43,10 @@ Begin WebDialog DatePickerWindow
       LockVertical    =   False
       Scope           =   0
       TabIndex        =   0
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   43
+      Top             =   100
       Visible         =   True
-      Width           =   30
+      Width           =   40
       _mPanelIndex    =   -1
    End
    Begin DateButton Button1
@@ -57,10 +56,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   40
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   62
+      Left            =   72
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -68,14 +67,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   1
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   43
+      Top             =   98
       Visible         =   True
-      Width           =   30
+      Width           =   40
       _mPanelIndex    =   -1
    End
    Begin DateButton Button2
@@ -85,10 +82,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   40
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   94
+      Left            =   114
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -96,14 +93,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   2
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   43
+      Top             =   98
       Visible         =   True
-      Width           =   30
+      Width           =   40
       _mPanelIndex    =   -1
    End
    Begin DateButton Button3
@@ -113,10 +108,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   40
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   126
+      Left            =   156
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -124,15 +119,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Ndex            =   0
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   3
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   43
+      Top             =   98
       Visible         =   True
-      Width           =   30
+      Width           =   40
       _mPanelIndex    =   -1
    End
    Begin DateButton Button4
@@ -142,10 +134,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   40
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   158
+      Left            =   198
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -153,15 +145,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Ndex            =   0
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   4
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   43
+      Top             =   98
       Visible         =   True
-      Width           =   30
+      Width           =   40
       _mPanelIndex    =   -1
    End
    Begin DateButton Button5
@@ -171,10 +160,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   40
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   190
+      Left            =   240
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -182,15 +171,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Ndex            =   0
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   5
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   43
+      Top             =   98
       Visible         =   True
-      Width           =   30
+      Width           =   40
       _mPanelIndex    =   -1
    End
    Begin DateButton Button6
@@ -200,10 +186,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   222
+      Left            =   342
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -211,15 +197,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Ndex            =   0
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   6
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   43
+      Top             =   100
       Visible         =   True
-      Width           =   30
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button7
@@ -229,7 +212,7 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   40
       Index           =   -2147483648
       Indicator       =   0
       Left            =   30
@@ -240,15 +223,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Ndex            =   0
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   7
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   74
+      Top             =   140
       Visible         =   True
-      Width           =   30
+      Width           =   40
       _mPanelIndex    =   -1
    End
    Begin DateButton Button8
@@ -258,10 +238,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   40
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   62
+      Left            =   72
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -269,15 +249,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Ndex            =   0
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   8
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   73
+      Top             =   140
       Visible         =   True
-      Width           =   30
+      Width           =   40
       _mPanelIndex    =   -1
    End
    Begin DateButton Button9
@@ -287,10 +264,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   40
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   94
+      Left            =   114
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -298,15 +275,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Ndex            =   0
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   9
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   74
+      Top             =   140
       Visible         =   True
-      Width           =   30
+      Width           =   40
       _mPanelIndex    =   -1
    End
    Begin DateButton Button10
@@ -316,10 +290,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   40
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   126
+      Left            =   156
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -327,15 +301,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Ndex            =   0
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   10
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   74
+      Top             =   140
       Visible         =   True
-      Width           =   30
+      Width           =   40
       _mPanelIndex    =   -1
    End
    Begin DateButton Button11
@@ -345,10 +316,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   40
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   158
+      Left            =   198
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -356,15 +327,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Ndex            =   0
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   11
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   74
+      Top             =   140
       Visible         =   True
-      Width           =   30
+      Width           =   40
       _mPanelIndex    =   -1
    End
    Begin DateButton Button12
@@ -374,10 +342,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   40
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   190
+      Left            =   240
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -385,15 +353,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Ndex            =   0
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   12
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   74
+      Top             =   140
       Visible         =   True
-      Width           =   30
+      Width           =   40
       _mPanelIndex    =   -1
    End
    Begin DateButton Button13
@@ -403,10 +368,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   222
+      Left            =   342
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -414,15 +379,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Ndex            =   0
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   13
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   74
+      Top             =   152
       Visible         =   True
-      Width           =   30
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button14
@@ -432,7 +394,7 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   40
       Index           =   -2147483648
       Indicator       =   0
       Left            =   30
@@ -443,15 +405,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Ndex            =   0
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   14
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   106
+      Top             =   182
       Visible         =   True
-      Width           =   30
+      Width           =   40
       _mPanelIndex    =   -1
    End
    Begin DateButton Button15
@@ -461,10 +420,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   40
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   62
+      Left            =   72
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -472,15 +431,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Ndex            =   0
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   15
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   105
+      Top             =   182
       Visible         =   True
-      Width           =   30
+      Width           =   40
       _mPanelIndex    =   -1
    End
    Begin DateButton Button16
@@ -490,10 +446,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   40
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   94
+      Left            =   114
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -501,15 +457,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Ndex            =   0
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   16
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   106
+      Top             =   182
       Visible         =   True
-      Width           =   30
+      Width           =   40
       _mPanelIndex    =   -1
    End
    Begin DateButton Button17
@@ -519,10 +472,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   40
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   126
+      Left            =   156
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -530,15 +483,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Ndex            =   0
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   17
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   106
+      Top             =   182
       Visible         =   True
-      Width           =   30
+      Width           =   40
       _mPanelIndex    =   -1
    End
    Begin DateButton Button18
@@ -548,10 +498,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   40
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   158
+      Left            =   198
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -559,15 +509,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Ndex            =   0
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   18
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   106
+      Top             =   182
       Visible         =   True
-      Width           =   30
+      Width           =   40
       _mPanelIndex    =   -1
    End
    Begin DateButton Button19
@@ -577,10 +524,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   190
+      Left            =   290
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -588,15 +535,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Ndex            =   0
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   19
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   106
+      Top             =   204
       Visible         =   True
-      Width           =   30
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button20
@@ -606,10 +550,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   222
+      Left            =   342
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -617,15 +561,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Ndex            =   0
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   20
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   106
+      Top             =   204
       Visible         =   True
-      Width           =   30
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button21
@@ -635,7 +576,7 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
       Left            =   30
@@ -646,15 +587,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Ndex            =   0
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   21
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   137
+      Top             =   256
       Visible         =   True
-      Width           =   30
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button22
@@ -664,10 +602,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   62
+      Left            =   82
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -675,15 +613,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Ndex            =   0
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   22
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   135
+      Top             =   256
       Visible         =   True
-      Width           =   30
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button23
@@ -693,10 +628,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   94
+      Left            =   134
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -704,15 +639,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Ndex            =   0
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   23
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   137
+      Top             =   256
       Visible         =   True
-      Width           =   30
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button24
@@ -722,10 +654,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   126
+      Left            =   186
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -733,15 +665,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Ndex            =   0
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   24
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   137
+      Top             =   256
       Visible         =   True
-      Width           =   30
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button25
@@ -751,10 +680,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   158
+      Left            =   238
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -762,15 +691,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Ndex            =   0
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   25
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   137
+      Top             =   256
       Visible         =   True
-      Width           =   30
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button26
@@ -780,10 +706,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   190
+      Left            =   290
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -791,15 +717,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Ndex            =   0
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   26
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   137
+      Top             =   256
       Visible         =   True
-      Width           =   30
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button27
@@ -809,10 +732,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   222
+      Left            =   342
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -820,15 +743,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Ndex            =   0
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   27
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   137
+      Top             =   256
       Visible         =   True
-      Width           =   30
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button28
@@ -838,7 +758,7 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
       Left            =   30
@@ -849,15 +769,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Ndex            =   0
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   28
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   168
+      Top             =   308
       Visible         =   True
-      Width           =   30
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button29
@@ -867,10 +784,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   62
+      Left            =   82
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -878,15 +795,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Ndex            =   0
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   29
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   169
+      Top             =   308
       Visible         =   True
-      Width           =   30
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button30
@@ -896,10 +810,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   94
+      Left            =   134
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -907,15 +821,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Ndex            =   0
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   30
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   168
+      Top             =   308
       Visible         =   True
-      Width           =   30
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button31
@@ -925,10 +836,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   126
+      Left            =   186
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -936,15 +847,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Ndex            =   0
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   31
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   168
+      Top             =   308
       Visible         =   True
-      Width           =   30
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button32
@@ -954,10 +862,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   158
+      Left            =   238
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -965,15 +873,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Ndex            =   0
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   32
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   168
+      Top             =   308
       Visible         =   True
-      Width           =   30
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button33
@@ -983,10 +888,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   190
+      Left            =   290
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -994,15 +899,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Ndex            =   0
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   33
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   168
+      Top             =   308
       Visible         =   True
-      Width           =   30
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button34
@@ -1012,10 +914,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   222
+      Left            =   342
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -1023,15 +925,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Ndex            =   0
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   34
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   168
+      Top             =   308
       Visible         =   True
-      Width           =   30
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button35
@@ -1041,7 +940,7 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
       Left            =   30
@@ -1052,15 +951,12 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Ndex            =   0
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   35
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   199
+      Top             =   360
       Visible         =   True
-      Width           =   30
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button36
@@ -1070,10 +966,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   30
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   62
+      Left            =   82
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -1081,25 +977,25 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Ndex            =   0
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   36
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   199
+      Top             =   360
       Visible         =   True
-      Width           =   30
+      Width           =   50
       _mPanelIndex    =   -1
    End
-   Begin WebCanvas Canvas1
+   Begin WebLabel Label1
+      Bold            =   False
       ControlID       =   ""
-      DiffEngineDisabled=   False
       Enabled         =   True
-      Height          =   38
+      FontName        =   ""
+      FontSize        =   0.0
+      Height          =   40
       Index           =   -2147483648
       Indicator       =   ""
-      Left            =   222
+      Italic          =   False
+      Left            =   37
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -1107,13 +1003,47 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
+      Multiline       =   False
       Scope           =   0
       TabIndex        =   37
       TabStop         =   True
+      Text            =   "Choisissez une date"
+      TextAlignment   =   2
+      TextColor       =   &c00000000
       Tooltip         =   ""
-      Top             =   215
+      Top             =   0
+      Underline       =   False
       Visible         =   True
-      Width           =   33
+      Width           =   285
+      _mPanelIndex    =   -1
+   End
+   Begin WebPopupMenu MonthPopup
+      ControlID       =   ""
+      Enabled         =   True
+      Height          =   40
+      Index           =   -2147483648
+      Indicator       =   ""
+      InitialValue    =   ""
+      LastAddedRowIndex=   0
+      LastRowIndex    =   0
+      Left            =   30
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      RowCount        =   0
+      Scope           =   0
+      SelectedRowIndex=   0
+      SelectedRowValue=   ""
+      TabIndex        =   38
+      TabStop         =   True
+      Tooltip         =   ""
+      Top             =   48
+      Visible         =   True
+      Width           =   150
       _mPanelIndex    =   -1
    End
 End
@@ -1177,7 +1107,9 @@ End
 		  
 		  For i As Integer = 0 To 35
 		    ButtonsList(i).Caption = i.ToText
-		    ButtonsList(i).Style.Value("text-align")="left"
+		    ButtonsList(i).Style.Value("text-align")="center"
+		    ButtonsList(i).Style.Value("height")="50px"
+		    //ButtonsList(i).Style.Value("font-size") = "0.75em"
 		  Next
 		  
 		  
@@ -1186,9 +1118,60 @@ End
 	#tag EndMethod
 
 
+	#tag Note, Name = remarque
+		30 82 134 186 238 290 342. Horizontal
+		100 152 204 256 304 356 vertical
+		
+	#tag EndNote
+
+
 	#tag Property, Flags = &h0
 		ButtonsList() As DateButton
 	#tag EndProperty
+
+	#tag ComputedProperty, Flags = &h0
+		#tag Getter
+			Get
+			  Return mEndYear
+			End Get
+		#tag EndGetter
+		#tag Setter
+			Set
+			  mEndYear = value
+			  
+			  //LoadYearPopup
+			End Set
+		#tag EndSetter
+		EndYear As Integer
+	#tag EndComputedProperty
+
+	#tag Property, Flags = &h21
+		Private mEndYear As Integer
+	#tag EndProperty
+
+	#tag Property, Flags = &h21
+		Private mSelectedDate As DateTime
+	#tag EndProperty
+
+	#tag Property, Flags = &h21
+		Private mStartYear As Integer
+	#tag EndProperty
+
+	#tag ComputedProperty, Flags = &h0
+		#tag Getter
+			Get
+			  Return mStartYear
+			End Get
+		#tag EndGetter
+		#tag Setter
+			Set
+			  mStartYear = value
+			  
+			  //LoadYearPopup
+			End Set
+		#tag EndSetter
+		StartYear As Integer
+	#tag EndComputedProperty
 
 
 	#tag Constant, Name = kDefaultEndYear, Type = Double, Dynamic = False, Default = \"2039", Scope = Private
@@ -1200,6 +1183,20 @@ End
 
 #tag EndWindowCode
 
+#tag Events MonthPopup
+	#tag Event
+		Sub SelectionChanged(item as WebMenuItem)
+		  //User has changed month
+		  //Update mSelectedDate and update window
+		  
+		  #Pragma unused item
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, Me.SelectedRowIndex + 1, 1)
+		  
+		  Update
+		End Sub
+	#tag EndEvent
+#tag EndEvents
 #tag ViewBehavior
 	#tag ViewProperty
 		Name="ControlCount"
@@ -1422,5 +1419,21 @@ End
 			"2 - TopToBottom"
 			"3 - BottomToTop"
 		#tag EndEnumValues
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="EndYear"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Integer"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="StartYear"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Integer"
+		EditorType=""
 	#tag EndViewProperty
 #tag EndViewBehavior
