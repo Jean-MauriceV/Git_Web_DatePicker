@@ -218,6 +218,14 @@ Inherits WebSession
 			Type="Integer"
 			EditorType=""
 		#tag EndViewProperty
+		#tag ViewProperty
+			Name="IsDatePicked"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="boolean"
+			EditorType=""
+		#tag EndViewProperty
 	#tag EndViewBehavior
 End Class
 #tag EndClass

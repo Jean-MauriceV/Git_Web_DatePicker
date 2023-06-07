@@ -29,8 +29,9 @@ Begin WebPage WebPage1
    _ImplicitInstance=   False
    _mDesignHeight  =   0
    _mDesignWidth   =   0
+   _mName          =   ""
    _mPanelIndex    =   -1
-   Begin WebButton Button1
+   Begin WebButton PickDateButton
       AllowAutoDisable=   False
       Cancel          =   False
       Caption         =   "find a date"
@@ -95,7 +96,7 @@ Begin WebPage WebPage1
       Height          =   38
       Hint            =   ""
       Index           =   -2147483648
-      Indicator       =   ""
+      Indicator       =   0
       Left            =   290
       LockBottom      =   False
       LockedInPosition=   False
@@ -108,7 +109,6 @@ Begin WebPage WebPage1
       ReadOnly        =   False
       Scope           =   0
       TabIndex        =   2
-      TabStop         =   True
       Text            =   ""
       TextAlignment   =   0
       Tooltip         =   ""
@@ -125,7 +125,7 @@ Begin WebPage WebPage1
       FontSize        =   0.0
       Height          =   38
       Index           =   -2147483648
-      Indicator       =   ""
+      Indicator       =   0
       Italic          =   False
       Left            =   290
       LockBottom      =   False
@@ -138,7 +138,6 @@ Begin WebPage WebPage1
       Multiline       =   False
       Scope           =   0
       TabIndex        =   3
-      TabStop         =   True
       Text            =   "Untitled"
       TextAlignment   =   0
       TextColor       =   &c00000000
@@ -155,7 +154,7 @@ End
 #tag WindowCode
 #tag EndWindowCode
 
-#tag Events Button1
+#tag Events PickDateButton
 	#tag Event
 		Sub Pressed()
 		  session.IsDatePicked = False
