@@ -4,7 +4,7 @@ Begin WebDialog DatePickerWindow
    ControlCount    =   0
    ControlID       =   ""
    Enabled         =   True
-   Height          =   438
+   Height          =   486
    Index           =   -2147483648
    Indicator       =   0
    LayoutDirection =   0
@@ -30,7 +30,7 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   40
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
       Left            =   30
@@ -46,7 +46,7 @@ Begin WebDialog DatePickerWindow
       Tooltip         =   ""
       Top             =   100
       Visible         =   True
-      Width           =   40
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button1
@@ -56,10 +56,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   40
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   72
+      Left            =   82
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -70,9 +70,9 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   1
       Tooltip         =   ""
-      Top             =   98
+      Top             =   100
       Visible         =   True
-      Width           =   40
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button2
@@ -82,10 +82,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   40
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   114
+      Left            =   134
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -96,9 +96,9 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   2
       Tooltip         =   ""
-      Top             =   98
+      Top             =   100
       Visible         =   True
-      Width           =   40
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button3
@@ -108,10 +108,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   40
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   156
+      Left            =   186
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -122,9 +122,9 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   3
       Tooltip         =   ""
-      Top             =   98
+      Top             =   100
       Visible         =   True
-      Width           =   40
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button4
@@ -134,10 +134,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   40
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   198
+      Left            =   238
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -148,9 +148,9 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   4
       Tooltip         =   ""
-      Top             =   98
+      Top             =   100
       Visible         =   True
-      Width           =   40
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button5
@@ -160,10 +160,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   40
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   240
+      Left            =   290
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -174,9 +174,9 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   5
       Tooltip         =   ""
-      Top             =   98
+      Top             =   100
       Visible         =   True
-      Width           =   40
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button6
@@ -212,7 +212,7 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   40
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
       Left            =   30
@@ -226,9 +226,9 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   7
       Tooltip         =   ""
-      Top             =   140
+      Top             =   152
       Visible         =   True
-      Width           =   40
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button8
@@ -238,10 +238,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   40
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   72
+      Left            =   82
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -252,9 +252,9 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   8
       Tooltip         =   ""
-      Top             =   140
+      Top             =   152
       Visible         =   True
-      Width           =   40
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button9
@@ -264,10 +264,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   40
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   114
+      Left            =   134
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -278,9 +278,9 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   9
       Tooltip         =   ""
-      Top             =   140
+      Top             =   152
       Visible         =   True
-      Width           =   40
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button10
@@ -290,10 +290,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   40
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   156
+      Left            =   186
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -304,9 +304,9 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   10
       Tooltip         =   ""
-      Top             =   140
+      Top             =   152
       Visible         =   True
-      Width           =   40
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button11
@@ -316,10 +316,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   40
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   198
+      Left            =   238
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -330,9 +330,9 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   11
       Tooltip         =   ""
-      Top             =   140
+      Top             =   152
       Visible         =   True
-      Width           =   40
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button12
@@ -342,10 +342,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   40
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   240
+      Left            =   290
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -356,9 +356,9 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   12
       Tooltip         =   ""
-      Top             =   140
+      Top             =   152
       Visible         =   True
-      Width           =   40
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button13
@@ -394,7 +394,7 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   40
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
       Left            =   30
@@ -408,9 +408,9 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   14
       Tooltip         =   ""
-      Top             =   182
+      Top             =   204
       Visible         =   True
-      Width           =   40
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button15
@@ -420,10 +420,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   40
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   72
+      Left            =   82
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -434,9 +434,9 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   15
       Tooltip         =   ""
-      Top             =   182
+      Top             =   204
       Visible         =   True
-      Width           =   40
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button16
@@ -446,10 +446,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   40
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   114
+      Left            =   134
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -460,9 +460,9 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   16
       Tooltip         =   ""
-      Top             =   182
+      Top             =   204
       Visible         =   True
-      Width           =   40
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button17
@@ -472,10 +472,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   40
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   156
+      Left            =   186
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -486,9 +486,9 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   17
       Tooltip         =   ""
-      Top             =   182
+      Top             =   204
       Visible         =   True
-      Width           =   40
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button18
@@ -498,10 +498,10 @@ Begin WebDialog DatePickerWindow
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
-      Height          =   40
+      Height          =   50
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   198
+      Left            =   238
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -512,9 +512,9 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   18
       Tooltip         =   ""
-      Top             =   182
+      Top             =   204
       Visible         =   True
-      Width           =   40
+      Width           =   50
       _mPanelIndex    =   -1
    End
    Begin DateButton Button19
@@ -1006,8 +1006,7 @@ Begin WebDialog DatePickerWindow
       Multiline       =   False
       Scope           =   0
       TabIndex        =   37
-      TabStop         =   True
-      Text            =   "Choisissez une date"
+      Text            =   "Choose a date"
       TextAlignment   =   2
       TextColor       =   &c00000000
       Tooltip         =   ""
@@ -1039,11 +1038,121 @@ Begin WebDialog DatePickerWindow
       SelectedRowIndex=   0
       SelectedRowValue=   ""
       TabIndex        =   38
+      Tooltip         =   ""
+      Top             =   48
+      Visible         =   True
+      Width           =   206
+      _mPanelIndex    =   -1
+   End
+   Begin WebPopupMenu YearPopup
+      ControlID       =   ""
+      Enabled         =   True
+      Height          =   40
+      Index           =   -2147483648
+      Indicator       =   ""
+      InitialValue    =   ""
+      LastAddedRowIndex=   0
+      LastRowIndex    =   0
+      Left            =   264
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      RowCount        =   0
+      Scope           =   0
+      SelectedRowIndex=   0
+      SelectedRowValue=   ""
+      TabIndex        =   39
       TabStop         =   True
       Tooltip         =   ""
       Top             =   48
       Visible         =   True
-      Width           =   150
+      Width           =   128
+      _mPanelIndex    =   -1
+   End
+   Begin WebButton NextMonthButton
+      AllowAutoDisable=   False
+      Cancel          =   False
+      Caption         =   ">"
+      ControlID       =   ""
+      Default         =   False
+      Enabled         =   True
+      Height          =   38
+      Index           =   -2147483648
+      Indicator       =   0
+      Left            =   264
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Scope           =   0
+      TabIndex        =   40
+      TabStop         =   True
+      Tooltip         =   ""
+      Top             =   420
+      Visible         =   True
+      Width           =   73
+      _mPanelIndex    =   -1
+   End
+   Begin WebButton PreviousMonthButton
+      AllowAutoDisable=   False
+      Cancel          =   False
+      Caption         =   "<"
+      ControlID       =   ""
+      Default         =   False
+      Enabled         =   True
+      Height          =   38
+      Index           =   -2147483648
+      Indicator       =   0
+      Left            =   82
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Scope           =   0
+      TabIndex        =   41
+      TabStop         =   True
+      Tooltip         =   ""
+      Top             =   420
+      Visible         =   True
+      Width           =   73
+      _mPanelIndex    =   -1
+   End
+   Begin WebButton CurrentMonthButton
+      AllowAutoDisable=   False
+      Cancel          =   False
+      Caption         =   "-"
+      ControlID       =   ""
+      Default         =   False
+      Enabled         =   True
+      Height          =   38
+      Index           =   -2147483648
+      Indicator       =   0
+      Left            =   172
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      PanelIndex      =   0
+      Scope           =   0
+      TabIndex        =   42
+      TabStop         =   True
+      Tooltip         =   ""
+      Top             =   420
+      Visible         =   True
+      Width           =   73
       _mPanelIndex    =   -1
    End
 End
@@ -1051,14 +1160,57 @@ End
 
 #tag WindowCode
 	#tag Event
+		Sub Dismissed()
+		  If session.IsDatePicked Then
+		    session.DatePicked = mSelectedDate // return the date picked
+		  End If
+		  
+		  session.setDateInTextFieldWebPage1 // update on webpage1
+		  
+		  
+		End Sub
+	#tag EndEvent
+
+	#tag Event
 		Sub Opening()
+		  Var d As DateTime = DateTime.Now
+		  mSelectedDate = New DateTime(d.year,d.month,d.day)
+		  LoadMonthPopup
+		  // Initialize PopUpYear for all possible years
+		  StartYear = kDefaultStartYear
+		  EndYear = kDefaultEndYear
+		  LoadYearPopup
+		  // reset buttons
+		  ResetButtonslist
 		  Update
 		End Sub
 	#tag EndEvent
 
 
+	#tag Method, Flags = &h21
+		Private Sub LoadMonthPopup()
+		  Var months() As String
+		  months = Array("January","February","March","April","May","June","July","August","September","October","November","December")
+		  MonthPopup.RemoveAllRows
+		  For Each month As String In months 
+		    MonthPopup.AddRow month
+		  Next
+		  
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h21
+		Private Sub LoadYearPopup()
+		  YearPopup.RemoveAllRows
+		  For i As Integer = StartYear To EndYear
+		    YearPopup.AddRow(Str(i))
+		  Next
+		  
+		End Sub
+	#tag EndMethod
+
 	#tag Method, Flags = &h0
-		Sub RedimButtonslist()
+		Sub ResetButtonslist()
 		  Redim ButtonsList(-1)
 		  
 		  
@@ -1098,19 +1250,65 @@ End
 		  ButtonsList.Add button33
 		  ButtonsList.Add button34
 		  ButtonsList.Add button35
+		  ButtonsList.Add button36
+		  
+		  For i As Integer = 0 To 36
+		    ButtonsList(i).Caption = i.ToText
+		    ButtonsList(i).Style.Value("text-align")="center"
+		    ButtonsList(i).Style.Value("height")="50px"
+		    ButtonsList(i).Style.Value("width")="50px"
+		    //ButtonsList(i).Style.Value("font-size") = "0.75em"
+		  Next
 		End Sub
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
 		Sub Update()
-		  RedimButtonslist()
+		  MonthPopup.SelectedRowIndex = mSelectedDate.Month - 1
 		  
-		  For i As Integer = 0 To 35
-		    ButtonsList(i).Caption = i.ToText
-		    ButtonsList(i).Style.Value("text-align")="center"
-		    ButtonsList(i).Style.Value("height")="50px"
-		    //ButtonsList(i).Style.Value("font-size") = "0.75em"
+		  If mSelectedDate.Year >= StartYear And mSelectedDate.Year <= EndYear Then
+		    Var yearRow As Integer = mSelectedDate.Year - StartYear
+		    YearPopup.SelectedRowIndex = yearRow
+		  ElseIf mSelectedDate.Year > EndYear Then
+		    YearPopup.SelectedRowIndex = YearPopup.LastRowIndex
+		  Else
+		    YearPopup.SelectedRowIndex = 0
+		  End If
+		  
+		  //find how many days in this month
+		  Var monthDays As Integer
+		  
+		  Select Case mSelectedDate.Month
+		  Case 1, 3, 5, 7, 8, 10, 12
+		    monthDays = 31
+		  Case 4, 6, 9, 11
+		    monthDays = 30
+		  Case Else
+		    // Calculate February
+		    If (mSelectedDate.Year / 4.0) = Floor(mSelectedDate.Year / 4.0) Then
+		      monthDays = 29 // Leap year
+		    Else
+		      monthDays = 28
+		    End If
+		  End Select
+		  
+		  // Update all the captions of the buttons and hide as appropriate
+		  Var dayOfWeek As Integer
+		  dayOfWeek = mSelectedDate.DayOfWeek
+		  
+		  Var dayNum As Integer
+		  For i As Integer = 0 To 36
+		    DayNum = i + 2 - dayOfWeek
+		    If dayNum > 0 And dayNum <= monthDays Then
+		      ButtonsList(i).Caption = Str(dayNum)
+		      ButtonsList(i).Visible = True
+		    Else
+		      ButtonsList(i).Visible = False
+		    End If
 		  Next
+		  
+		  
+		  
 		  
 		  
 		  
@@ -1139,7 +1337,7 @@ End
 			Set
 			  mEndYear = value
 			  
-			  //LoadYearPopup
+			  LoadYearPopup
 			End Set
 		#tag EndSetter
 		EndYear As Integer
@@ -1167,7 +1365,7 @@ End
 			Set
 			  mStartYear = value
 			  
-			  //LoadYearPopup
+			  LoadYearPopup
 			End Set
 		#tag EndSetter
 		StartYear As Integer
@@ -1183,6 +1381,561 @@ End
 
 #tag EndWindowCode
 
+#tag Events Button0
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button1
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button2
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button3
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button4
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button5
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button6
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button7
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button8
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button9
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button10
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button11
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button12
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button13
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button14
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button15
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button16
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button17
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button18
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button19
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button20
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button21
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button22
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button23
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button24
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button25
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button26
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button27
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button28
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button29
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button30
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button31
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button32
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button33
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button34
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button35
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button36
+	#tag Event
+		Sub Pressed()
+		  
+		  
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
+		  session.IsDatePicked = True
+		  
+		  Self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
 #tag Events MonthPopup
 	#tag Event
 		Sub SelectionChanged(item as WebMenuItem)
@@ -1192,6 +1945,70 @@ End
 		  #Pragma unused item
 		  
 		  mSelectedDate = New DateTime(mSelectedDate.Year, Me.SelectedRowIndex + 1, 1)
+		  
+		  Update
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events YearPopup
+	#tag Event
+		Sub SelectionChanged(item as WebMenuItem)
+		  // User has changed year
+		  // Update mSelectedDate and update window
+		  #Pragma unused item
+		  
+		  mSelectedDate = New DateTime(Val(Me.SelectedRowValue), mSelectedDate.Month, 1)
+		  
+		  Update
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events NextMonthButton
+	#tag Event
+		Sub Pressed()
+		  // User wants to advance a month
+		  // If not at limits of dates(dec,2039) then do it
+		  
+		  Var m, y As Integer
+		  
+		  m = MonthPopup.SelectedRowIndex + 1
+		  y = Val(YearPopup.SelectedRowValue)
+		  
+		  If m = 12 And y < EndYear Then
+		    YearPopup.SelectedRowIndex = YearPopup.SelectedRowIndex + 1
+		    MonthPopup.SelectedRowIndex = 0
+		  ElseIf m < 12 Then
+		    MonthPopup.SelectedRowIndex = MonthPopup.SelectedRowIndex + 1
+		  End If
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events PreviousMonthButton
+	#tag Event
+		Sub Pressed()
+		  // User wants to back up a month
+		  // If not at limits of dates(Jan,1904) then do it
+		  
+		  Var m,y As Integer
+		  
+		  m = MonthPopup.SelectedRowIndex + 1
+		  y = Val(YearPopup.SelectedRowValue)
+		  
+		  If m = 1 And y > StartYear Then
+		    YearPopup.SelectedRowIndex = YearPopup.SelectedRowIndex - 1
+		    MonthPopup.SelectedRowIndex = 11
+		  ElseIf m > 1 Then
+		    MonthPopup.SelectedRowIndex = MonthPopup.SelectedRowIndex - 1
+		  End If
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events CurrentMonthButton
+	#tag Event
+		Sub Pressed()
+		  //User wants to move to current month
+		  
+		  mSelectedDate = New DateTime(datetime.now.Year, DateTime.Now.Month, 1)
 		  
 		  Update
 		End Sub

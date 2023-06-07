@@ -5,8 +5,34 @@ Inherits WebSession
   interruptmessage=
   disconnectmessage=
   confirmmessage=
-  AllowTabOrderWrap=
+  AllowTabOrderWrap=False
 #tag EndSession
+	#tag Method, Flags = &h0
+		Sub setDateInTextFieldWebPage1()
+		  If Session.IsDatePicked Then
+		    WebPage1.TextField1.Text = session.DatePicked.SQLDate
+		    WebPage1.Label1.Text = "You have selected a date"
+		    session.IsDatePicked = False // reset the value
+		  Else
+		    WebPage1.TextField1.Text = ""
+		    WebPage1.Label1.Text = "You have NOT selected a date"
+		  End If
+		  
+		  
+		  
+		End Sub
+	#tag EndMethod
+
+
+	#tag Property, Flags = &h0
+		DatePicked As DateTime
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		IsDatePicked As boolean
+	#tag EndProperty
+
+
 	#tag ViewBehavior
 		#tag ViewProperty
 			Name="Index"

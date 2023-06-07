@@ -25,7 +25,7 @@ Begin WebPage WebPage1
    Title           =   "Untitled"
    Top             =   0
    Visible         =   True
-   Width           =   600
+   Width           =   758
    _ImplicitInstance=   False
    _mDesignHeight  =   0
    _mDesignWidth   =   0
@@ -40,7 +40,7 @@ Begin WebPage WebPage1
       Height          =   38
       Index           =   -2147483648
       Indicator       =   1
-      Left            =   198
+      Left            =   45
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -50,9 +50,8 @@ Begin WebPage WebPage1
       LockVertical    =   False
       Scope           =   0
       TabIndex        =   0
-      TabStop         =   True
       Tooltip         =   ""
-      Top             =   81
+      Top             =   63
       Visible         =   True
       Width           =   183
       _mPanelIndex    =   -1
@@ -61,12 +60,13 @@ Begin WebPage WebPage1
       ControlCount    =   0
       ControlID       =   ""
       Enabled         =   True
+      EndYear         =   0
       Height          =   284
       Index           =   -2147483648
       Indicator       =   0
       LayoutDirection =   0
       LayoutType      =   0
-      Left            =   0
+      Left            =   79
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -75,14 +75,78 @@ Begin WebPage WebPage1
       LockTop         =   False
       LockVertical    =   False
       Scope           =   0
+      StartYear       =   0
       TabIndex        =   1
-      TabStop         =   True
       Tooltip         =   ""
       Top             =   0
       Visible         =   True
       Width           =   336
       _mDesignHeight  =   0
       _mDesignWidth   =   0
+      _mPanelIndex    =   -1
+   End
+   Begin WebTextField TextField1
+      AllowAutoComplete=   False
+      AllowSpellChecking=   False
+      Caption         =   ""
+      ControlID       =   ""
+      Enabled         =   True
+      FieldType       =   0
+      Height          =   38
+      Hint            =   ""
+      Index           =   -2147483648
+      Indicator       =   ""
+      Left            =   290
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      MaximumCharactersAllowed=   0
+      ReadOnly        =   False
+      Scope           =   0
+      TabIndex        =   2
+      TabStop         =   True
+      Text            =   ""
+      TextAlignment   =   0
+      Tooltip         =   ""
+      Top             =   63
+      Visible         =   True
+      Width           =   140
+      _mPanelIndex    =   -1
+   End
+   Begin WebLabel Label1
+      Bold            =   False
+      ControlID       =   ""
+      Enabled         =   True
+      FontName        =   ""
+      FontSize        =   0.0
+      Height          =   38
+      Index           =   -2147483648
+      Indicator       =   ""
+      Italic          =   False
+      Left            =   290
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      TabIndex        =   3
+      TabStop         =   True
+      Text            =   "Untitled"
+      TextAlignment   =   0
+      TextColor       =   &c00000000
+      Tooltip         =   ""
+      Top             =   129
+      Underline       =   False
+      Visible         =   True
+      Width           =   364
       _mPanelIndex    =   -1
    End
 End
@@ -94,6 +158,7 @@ End
 #tag Events Button1
 	#tag Event
 		Sub Pressed()
+		  session.IsDatePicked = False
 		  DatePickerWindow1.Show
 		End Sub
 	#tag EndEvent
