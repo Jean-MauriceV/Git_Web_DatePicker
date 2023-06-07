@@ -22,7 +22,6 @@ Begin WebDialog DatePickerWindow
    Width           =   428
    _mDesignHeight  =   0
    _mDesignWidth   =   0
-   _mName          =   ""
    _mPanelIndex    =   -1
    Begin DateButton Button0
       AllowAutoDisable=   False
@@ -1251,9 +1250,9 @@ End
 		  
 		  For i As Integer = 0 To 36
 		    ButtonsList(i).Caption = i.ToText
-		    ButtonsList(i).Style.Value("text-align")="center"
-		    ButtonsList(i).Style.Value("height")="50px"
-		    ButtonsList(i).Style.Value("width")="50px"
+		    //ButtonsList(i).Style.Value("text-align")="center"
+		    //ButtonsList(i).Style.Value("height")="50px"
+		    //ButtonsList(i).Style.Value("width")="50px"
 		    //ButtonsList(i).Style.Value("font-size") = "0.75em"
 		  Next
 		End Sub

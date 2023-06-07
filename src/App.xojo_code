@@ -30,7 +30,7 @@ Inherits WebApplication
 		
 		I used the session properties to communicate between the webpage and webdialog, Is there an other way ? 
 		
-		
+		Is it better to put the styles of the buttons in the opening event of the datebutton class or when I load the buttons in my array ButtonsList ?
 		
 		parameters for left and top values for the lines of buttons 
 		30 82 134 186 238 290 342. Horizontal (left)
