@@ -157,8 +157,8 @@ End
 #tag Events PickDateButton
 	#tag Event
 		Sub Pressed()
-		  session.IsDatePicked = False
-		  DatePickerWindow1.Show
+		  session.IsDatePicked = False // property to create in session
+		  DatePickerWindow1.Show // name of your control datepicker
 		End Sub
 	#tag EndEvent
 #tag EndEvents

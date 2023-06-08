@@ -22,6 +22,7 @@ Begin WebDialog DatePickerWindow
    Width           =   428
    _mDesignHeight  =   0
    _mDesignWidth   =   0
+   _mName          =   ""
    _mPanelIndex    =   -1
    Begin DateButton Button0
       AllowAutoDisable=   False

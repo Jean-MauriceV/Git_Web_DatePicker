@@ -10,7 +10,7 @@ Inherits WebSession
 	#tag Method, Flags = &h0
 		Sub setDateInTextFieldWebPage1()
 		  If Session.IsDatePicked Then
-		    WebPage1.TextField1.Text = session.DatePicked.SQLDate
+		    WebPage1.TextField1.Text = session.DatePicked.SQLDate // put the name of your textfield here or whatever it goes to
 		    WebPage1.Label1.Text = "You have selected a date"
 		    session.IsDatePicked = False // reset the value
 		  Else
