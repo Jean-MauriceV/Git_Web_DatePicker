@@ -2,19 +2,6 @@
 Protected Class DateButton
 Inherits WebButton
 	#tag CompatibilityFlags = API2Only
-	#tag Event
-		Sub Opening()
-		  //Self.Style.Value("font-size") = " 0.7em"
-		  //Self.Style.Value("text-align")="left"
-		  // you can put here some adjustments global to all buttons
-		  
-		  Self.Style.Value("text-align")="center"
-		  Self.Style.Value("height")="50px"
-		  Self.Style.Value("width")="50px"
-		End Sub
-	#tag EndEvent
-
-
 	#tag ViewBehavior
 		#tag ViewProperty
 			Name="Index"

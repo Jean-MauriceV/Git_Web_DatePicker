@@ -29,7 +29,6 @@ Begin WebPage WebPage1
    _ImplicitInstance=   False
    _mDesignHeight  =   0
    _mDesignWidth   =   0
-   _mName          =   ""
    _mPanelIndex    =   -1
    Begin WebButton PickDateButton
       AllowAutoDisable=   False
@@ -148,17 +147,122 @@ Begin WebPage WebPage1
       Width           =   364
       _mPanelIndex    =   -1
    End
+   Begin WebButton PickDateButton1
+      AllowAutoDisable=   False
+      Cancel          =   False
+      Caption         =   "find a date with starting date"
+      ControlID       =   ""
+      Default         =   True
+      Enabled         =   True
+      Height          =   38
+      Index           =   -2147483648
+      Indicator       =   1
+      Left            =   45
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      PanelIndex      =   0
+      Scope           =   0
+      TabIndex        =   4
+      TabStop         =   True
+      Tooltip         =   ""
+      Top             =   207
+      Visible         =   True
+      Width           =   256
+      _mPanelIndex    =   -1
+   End
+   Begin WebTextField TextField2
+      AllowAutoComplete=   False
+      AllowSpellChecking=   False
+      Caption         =   ""
+      ControlID       =   ""
+      Enabled         =   True
+      FieldType       =   0
+      Height          =   38
+      Hint            =   ""
+      Index           =   -2147483648
+      Indicator       =   0
+      Left            =   152
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      MaximumCharactersAllowed=   0
+      ReadOnly        =   False
+      Scope           =   0
+      TabIndex        =   5
+      TabStop         =   True
+      Text            =   ""
+      TextAlignment   =   0
+      Tooltip         =   ""
+      Top             =   266
+      Visible         =   True
+      Width           =   140
+      _mPanelIndex    =   -1
+   End
 End
 #tag EndWebPage
 
 #tag WindowCode
+	#tag Method, Flags = &h0
+		Sub DatePickerClosing(sender as DatePickerWindow)
+		  If sender.IsDatePicked Then
+		    TextField1.Text = sender.MySelectedDate.SQLDate
+		    Label1.Text = "You have selected a date"
+		  Else
+		    Label1.Text = "You have NOT selected a new date"
+		  End If 
+		  
+		End Sub
+	#tag EndMethod
+
+
 #tag EndWindowCode
 
 #tag Events PickDateButton
 	#tag Event
 		Sub Pressed()
-		  session.IsDatePicked = False // property to create in session
-		  DatePickerWindow1.Show // name of your control datepicker
+		  // show datepickerwindow 
+		  // the picker will have today as start date -- constriuctor with no parameter
+		  DatePickerWindow1.show // name of your control datepicker
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events DatePickerWindow1
+	#tag Event
+		Sub Dismissed()
+		  
+		  If Me.IsDatePicked Then
+		    TextField1.Text = Me.MySelectedDate.SQLDate
+		    Label1.Text = "You have selected a date"
+		  Else
+		    Label1.Text = "You have NOT selected a new date"
+		  End If
+		  
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events PickDateButton1
+	#tag Event
+		Sub Pressed()
+		  // creates a datepickerwindow on the run with a certain date
+		  // the picker will have the date as start
+		  
+		  Try
+		    Var d As datetime = DateTime.FromString(TextField2.Text)
+		    Var MyPicker As New DatePickerWindow(d)
+		    AddHandler MyPicker.dismissed , WeakAddressOf DatePickerClosing 
+		    MyPicker.Show // name of your control datepicker
+		  Catch e As InvalidArgumentException
+		    MessageBox("Your date is not valid !! ")
+		  End Try
 		End Sub
 	#tag EndEvent
 #tag EndEvents

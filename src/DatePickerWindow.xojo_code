@@ -22,7 +22,6 @@ Begin WebDialog DatePickerWindow
    Width           =   428
    _mDesignHeight  =   0
    _mDesignWidth   =   0
-   _mName          =   ""
    _mPanelIndex    =   -1
    Begin DateButton Button0
       AllowAutoDisable=   False
@@ -1156,21 +1155,10 @@ End
 
 #tag WindowCode
 	#tag Event
-		Sub Dismissed()
-		  If session.IsDatePicked Then
-		    session.DatePicked = mSelectedDate // return the date picked
-		  End If
-		  
-		  session.setDateInTextFieldWebPage1 // update on webpage1
-		  
-		  
-		End Sub
-	#tag EndEvent
-
-	#tag Event
 		Sub Opening()
-		  Var d As DateTime = DateTime.Now
-		  mSelectedDate = New DateTime(d.year,d.month,d.day)
+		  //date is fixed in constructor
+		  IsDatePicked = False 
+		  //load months -- go in the method to put your Language
 		  LoadMonthPopup
 		  // Initialize PopUpYear for all possible years
 		  StartYear = kDefaultStartYear
@@ -1182,6 +1170,53 @@ End
 		End Sub
 	#tag EndEvent
 
+
+	#tag Method, Flags = &h21
+		Private Sub ButtonPressedHandler(button as WebButton)
+		  // day has been chosen
+		  // update mSelectedDate and close window and the event dismissed will be called
+		  
+		  IsDatePicked = True
+		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(button.Caption))
+		  RaiseEvent DatePicked(New DateTime(mSelectedDate))
+		  
+		  
+		  Self.Close
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Sub Constructor()
+		  // Calling the overridden superclass constructor.
+		  // Note that this may need modifications if there are multiple constructor choices.
+		  // Possible constructor calls:
+		  // Constructor() -- From WebView
+		  // Constructor() -- From WebUIControl
+		  // Constructor() -- From WebControl
+		  
+		  mSelectedDate = DateTime.Now // today
+		  mSelectedDay = mSelectedDate.Day
+		  
+		  Super.Constructor
+		  
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Sub Constructor(d as DateTime)
+		  // Calling the overridden superclass constructor.
+		  // Note that this may need modifications if there are multiple constructor choices.
+		  // Possible constructor calls:
+		  // Constructor() -- From WebView
+		  // Constructor() -- From WebUIControl
+		  // Constructor() -- From WebControl
+		  //Var d As DateTime = DateTime.Now
+		  mSelectedDate = d  // starts with the date provided
+		  mSelectedDay = mSelectedDate.Day
+		  Super.Constructor
+		  
+		End Sub
+	#tag EndMethod
 
 	#tag Method, Flags = &h21
 		Private Sub LoadMonthPopup()
@@ -1206,8 +1241,8 @@ End
 		End Sub
 	#tag EndMethod
 
-	#tag Method, Flags = &h0
-		Sub ResetButtonslist()
+	#tag Method, Flags = &h21
+		Private Sub ResetButtonsList()
 		  Redim ButtonsList(-1)
 		  
 		  
@@ -1251,16 +1286,16 @@ End
 		  
 		  For i As Integer = 0 To 36
 		    ButtonsList(i).Caption = i.ToText
-		    //ButtonsList(i).Style.Value("text-align")="center"
-		    //ButtonsList(i).Style.Value("height")="50px"
-		    //ButtonsList(i).Style.Value("width")="50px"
+		    ButtonsList(i).Style.Value("text-align")="center"
+		    ButtonsList(i).Style.Value("height")="50px"
+		    ButtonsList(i).Style.Value("width")="50px"
 		    //ButtonsList(i).Style.Value("font-size") = "0.75em"
 		  Next
 		End Sub
 	#tag EndMethod
 
-	#tag Method, Flags = &h0
-		Sub Update()
+	#tag Method, Flags = &h21
+		Private Sub Update()
 		  MonthPopup.SelectedRowIndex = mSelectedDate.Month - 1
 		  
 		  If mSelectedDate.Year >= StartYear And mSelectedDate.Year <= EndYear Then
@@ -1282,8 +1317,22 @@ End
 		    monthDays = 30
 		  Case Else
 		    // Calculate February
-		    If (mSelectedDate.Year / 4.0) = Floor(mSelectedDate.Year / 4.0) Then
-		      monthDays = 29 // Leap year
+		    //If (mSelectedDate.Year / 4.0) = Floor(mSelectedDate.Year / 4.0) Then
+		    //monthDays = 29 // Leap year
+		    //Else
+		    //monthDays = 28
+		    //End If
+		    // Calculate Leap Year
+		    If mSelectedDate.Year Mod 4 = 0 Then
+		      If mSelectedDate.Year Mod 100 = 0 Then
+		        If mSelectedDate.Year Mod 400 = 0 Then
+		          monthDays = 29 // Leap year
+		        Else
+		          monthDays = 28
+		        End If
+		      Else
+		        monthDays = 29 // Leap year
+		      End If
 		    Else
 		      monthDays = 28
 		    End If
@@ -1297,6 +1346,9 @@ End
 		  For i As Integer = 0 To 36
 		    DayNum = i + 2 - dayOfWeek
 		    If dayNum > 0 And dayNum <= monthDays Then
+		      If dayNum = mSelectedDay Then
+		        ButtonsList(i).Style.BackgroundColor = Color.Yellow
+		      End If
 		      ButtonsList(i).Caption = Str(dayNum)
 		      ButtonsList(i).Visible = True
 		    Else
@@ -1311,6 +1363,11 @@ End
 		  
 		End Sub
 	#tag EndMethod
+
+
+	#tag Hook, Flags = &h0
+		Event DatePicked(SelectedDate as DateTime)
+	#tag EndHook
 
 
 	#tag Property, Flags = &h0
@@ -1333,6 +1390,10 @@ End
 		EndYear As Integer
 	#tag EndComputedProperty
 
+	#tag Property, Flags = &h0
+		IsDatePicked As Boolean
+	#tag EndProperty
+
 	#tag Property, Flags = &h21
 		Private mEndYear As Integer
 	#tag EndProperty
@@ -1342,8 +1403,25 @@ End
 	#tag EndProperty
 
 	#tag Property, Flags = &h21
+		Private mSelectedDay As Integer
+	#tag EndProperty
+
+	#tag Property, Flags = &h21
 		Private mStartYear As Integer
 	#tag EndProperty
+
+	#tag Property, Flags = &h21
+		Private mUntitled As Integer
+	#tag EndProperty
+
+	#tag ComputedProperty, Flags = &h0
+		#tag Getter
+			Get
+			  Return mSelectedDate
+			End Get
+		#tag EndGetter
+		MySelectedDate As DateTime
+	#tag EndComputedProperty
 
 	#tag ComputedProperty, Flags = &h0
 		#tag Getter
@@ -1374,555 +1452,259 @@ End
 #tag Events Button0
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button1
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button2
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button3
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button4
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button5
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button6
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button7
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button8
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button9
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button10
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button11
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button12
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button13
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button14
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button15
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button16
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button17
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button18
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button19
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button20
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button21
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button22
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button23
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button24
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button25
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button26
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button27
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button28
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button29
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button30
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button31
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button32
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button33
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button34
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button35
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Button36
 	#tag Event
 		Sub Pressed()
-		  
-		  
-		  // day has been chosen
-		  // update mSelectedDate and close window and the event dismissed will be called
-		  
-		  mSelectedDate = New DateTime(mSelectedDate.Year, mSelectedDate.Month, Val(Me.Caption))
-		  session.IsDatePicked = True
-		  
-		  Self.Close
+		  ButtonPressedHandler(Me)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -2241,6 +2023,14 @@ End
 		Group="Behavior"
 		InitialValue=""
 		Type="Integer"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="IsDatePicked"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Boolean"
 		EditorType=""
 	#tag EndViewProperty
 #tag EndViewBehavior
