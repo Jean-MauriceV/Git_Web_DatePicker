@@ -1157,6 +1157,7 @@ End
 	#tag Event
 		Sub Opening()
 		  //date is fixed in constructor
+		  
 		  IsDatePicked = False 
 		  //load months -- go in the method to put your Language
 		  LoadMonthPopup
@@ -1195,7 +1196,8 @@ End
 		  // Constructor() -- From WebControl
 		  
 		  mSelectedDate = DateTime.Now // today
-		  mSelectedDay = mSelectedDate.Day
+		  mInitialDate = mSelectedDate
+		  mInitialDay = mInitialDate.Day
 		  
 		  Super.Constructor
 		  
@@ -1212,7 +1214,8 @@ End
 		  // Constructor() -- From WebControl
 		  //Var d As DateTime = DateTime.Now
 		  mSelectedDate = d  // starts with the date provided
-		  mSelectedDay = mSelectedDate.Day
+		  mInitialDate = mSelectedDate
+		  mInitialDay = mInitialDate.Day
 		  Super.Constructor
 		  
 		End Sub
@@ -1346,9 +1349,12 @@ End
 		  For i As Integer = 0 To 36
 		    DayNum = i + 2 - dayOfWeek
 		    If dayNum > 0 And dayNum <= monthDays Then
-		      If dayNum = mSelectedDay Then
+		      If dayNum = mInitialDay Then
 		        ButtonsList(i).Style.BackgroundColor = Color.Yellow
+		      Else
+		        ButtonsList(i).Style.BackgroundColor = Color.RGB(242,242,242)
 		      End If
+		      
 		      ButtonsList(i).Caption = Str(dayNum)
 		      ButtonsList(i).Visible = True
 		    Else
@@ -1399,11 +1405,15 @@ End
 	#tag EndProperty
 
 	#tag Property, Flags = &h21
-		Private mSelectedDate As DateTime
+		Private mInitialDate As datetime
 	#tag EndProperty
 
 	#tag Property, Flags = &h21
-		Private mSelectedDay As Integer
+		Private mInitialDay As Integer
+	#tag EndProperty
+
+	#tag Property, Flags = &h21
+		Private mSelectedDate As DateTime
 	#tag EndProperty
 
 	#tag Property, Flags = &h21
@@ -1717,6 +1727,11 @@ End
 		  #Pragma unused item
 		  
 		  mSelectedDate = New DateTime(mSelectedDate.Year, Me.SelectedRowIndex + 1, 1)
+		  If mInitialDate.Year = mSelectedDate.Year And mInitialDate.Month = mSelectedDate.Month  Then
+		    mInitialDay = mInitialDate.day
+		  Else
+		    mInitialDay = 99 // we have changed the month and the year so forget the highlight of the day initilay sent
+		  End If 
 		  
 		  Update
 		End Sub
@@ -1730,7 +1745,11 @@ End
 		  #Pragma unused item
 		  
 		  mSelectedDate = New DateTime(Val(Me.SelectedRowValue), mSelectedDate.Month, 1)
-		  
+		  If mInitialDate.Year = mSelectedDate.Year And mInitialDate.Month = mSelectedDate.Month Then
+		    mInitialDay = mInitialDate.day
+		  Else
+		    mInitialDay = 99 // we have changed the month and the year so forget the highlight of the day initilay sent
+		  End If 
 		  Update
 		End Sub
 	#tag EndEvent
@@ -1781,6 +1800,12 @@ End
 		  //User wants to move to current month
 		  
 		  mSelectedDate = New DateTime(datetime.now.Year, DateTime.Now.Month, 1)
+		  
+		  If mInitialDate.Year = mSelectedDate.Year And mInitialDate.Month = mSelectedDate.Month  Then
+		    mInitialDay = mInitialDate.day
+		  Else
+		    mInitialDay = 99 // we have changed the month and the year so forget the highlight of the day initilay sent
+		  End If 
 		  
 		  Update
 		End Sub
