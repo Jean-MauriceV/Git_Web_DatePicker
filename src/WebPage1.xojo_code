@@ -64,6 +64,7 @@ Begin WebPage WebPage1
       Height          =   284
       Index           =   -2147483648
       Indicator       =   0
+      IsDatePicked    =   False
       LayoutDirection =   0
       LayoutType      =   0
       Left            =   79
@@ -165,10 +166,8 @@ Begin WebPage WebPage1
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   4
-      TabStop         =   True
       Tooltip         =   ""
       Top             =   207
       Visible         =   True
@@ -198,7 +197,6 @@ Begin WebPage WebPage1
       ReadOnly        =   False
       Scope           =   0
       TabIndex        =   5
-      TabStop         =   True
       Text            =   ""
       TextAlignment   =   0
       Tooltip         =   ""
@@ -257,7 +255,7 @@ End
 		  
 		  Try
 		    Var d As datetime = DateTime.FromString(TextField2.Text)
-		    Var MyPicker As New DatePickerWindow(d)
+		    Var MyPicker As New DatePickerWindow(d,"FR")
 		    AddHandler MyPicker.dismissed , WeakAddressOf DatePickerClosing 
 		    MyPicker.Show // name of your control datepicker
 		  Catch e As InvalidArgumentException

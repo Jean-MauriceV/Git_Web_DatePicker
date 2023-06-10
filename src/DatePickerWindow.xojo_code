@@ -4,7 +4,7 @@ Begin WebDialog DatePickerWindow
    ControlCount    =   0
    ControlID       =   ""
    Enabled         =   True
-   Height          =   486
+   Height          =   500
    Index           =   -2147483648
    Indicator       =   0
    LayoutDirection =   0
@@ -19,7 +19,7 @@ Begin WebDialog DatePickerWindow
    TabIndex        =   0
    Top             =   0
    Visible         =   True
-   Width           =   428
+   Width           =   425
    _mDesignHeight  =   0
    _mDesignWidth   =   0
    _mPanelIndex    =   -1
@@ -44,7 +44,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   0
       Tooltip         =   ""
-      Top             =   100
+      Top             =   133
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -70,7 +70,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   1
       Tooltip         =   ""
-      Top             =   100
+      Top             =   133
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -96,7 +96,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   2
       Tooltip         =   ""
-      Top             =   100
+      Top             =   133
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -122,7 +122,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   3
       Tooltip         =   ""
-      Top             =   100
+      Top             =   133
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -148,7 +148,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   4
       Tooltip         =   ""
-      Top             =   100
+      Top             =   133
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -174,7 +174,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   5
       Tooltip         =   ""
-      Top             =   100
+      Top             =   133
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -200,7 +200,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   6
       Tooltip         =   ""
-      Top             =   100
+      Top             =   133
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -226,7 +226,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   7
       Tooltip         =   ""
-      Top             =   152
+      Top             =   185
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -252,7 +252,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   8
       Tooltip         =   ""
-      Top             =   152
+      Top             =   185
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -278,7 +278,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   9
       Tooltip         =   ""
-      Top             =   152
+      Top             =   185
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -304,7 +304,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   10
       Tooltip         =   ""
-      Top             =   152
+      Top             =   185
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -330,7 +330,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   11
       Tooltip         =   ""
-      Top             =   152
+      Top             =   185
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -356,7 +356,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   12
       Tooltip         =   ""
-      Top             =   152
+      Top             =   185
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -382,7 +382,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   13
       Tooltip         =   ""
-      Top             =   152
+      Top             =   185
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -408,7 +408,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   14
       Tooltip         =   ""
-      Top             =   204
+      Top             =   237
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -434,7 +434,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   15
       Tooltip         =   ""
-      Top             =   204
+      Top             =   237
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -460,7 +460,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   16
       Tooltip         =   ""
-      Top             =   204
+      Top             =   237
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -486,7 +486,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   17
       Tooltip         =   ""
-      Top             =   204
+      Top             =   237
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -512,7 +512,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   18
       Tooltip         =   ""
-      Top             =   204
+      Top             =   237
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -538,7 +538,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   19
       Tooltip         =   ""
-      Top             =   204
+      Top             =   237
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -564,7 +564,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   20
       Tooltip         =   ""
-      Top             =   204
+      Top             =   237
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -590,7 +590,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   21
       Tooltip         =   ""
-      Top             =   256
+      Top             =   289
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -616,7 +616,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   22
       Tooltip         =   ""
-      Top             =   256
+      Top             =   289
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -642,7 +642,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   23
       Tooltip         =   ""
-      Top             =   256
+      Top             =   289
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -668,7 +668,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   24
       Tooltip         =   ""
-      Top             =   256
+      Top             =   289
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -694,7 +694,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   25
       Tooltip         =   ""
-      Top             =   256
+      Top             =   289
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -720,7 +720,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   26
       Tooltip         =   ""
-      Top             =   256
+      Top             =   289
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -746,7 +746,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   27
       Tooltip         =   ""
-      Top             =   256
+      Top             =   289
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -772,7 +772,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   28
       Tooltip         =   ""
-      Top             =   308
+      Top             =   341
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -798,7 +798,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   29
       Tooltip         =   ""
-      Top             =   308
+      Top             =   341
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -824,7 +824,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   30
       Tooltip         =   ""
-      Top             =   308
+      Top             =   341
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -850,7 +850,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   31
       Tooltip         =   ""
-      Top             =   308
+      Top             =   341
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -876,7 +876,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   32
       Tooltip         =   ""
-      Top             =   308
+      Top             =   341
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -902,7 +902,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   33
       Tooltip         =   ""
-      Top             =   308
+      Top             =   341
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -928,7 +928,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   34
       Tooltip         =   ""
-      Top             =   308
+      Top             =   341
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -954,7 +954,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   35
       Tooltip         =   ""
-      Top             =   360
+      Top             =   393
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -980,7 +980,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   36
       Tooltip         =   ""
-      Top             =   360
+      Top             =   393
       Visible         =   True
       Width           =   50
       _mPanelIndex    =   -1
@@ -995,7 +995,7 @@ Begin WebDialog DatePickerWindow
       Index           =   -2147483648
       Indicator       =   0
       Italic          =   False
-      Left            =   37
+      Left            =   140
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -1013,7 +1013,7 @@ Begin WebDialog DatePickerWindow
       Top             =   0
       Underline       =   False
       Visible         =   True
-      Width           =   285
+      Width           =   168
       _mPanelIndex    =   -1
    End
    Begin WebPopupMenu MonthPopup
@@ -1049,7 +1049,7 @@ Begin WebDialog DatePickerWindow
       Enabled         =   True
       Height          =   40
       Index           =   -2147483648
-      Indicator       =   0
+      Indicator       =   1
       InitialValue    =   ""
       LastAddedRowIndex=   0
       LastRowIndex    =   0
@@ -1081,8 +1081,8 @@ Begin WebDialog DatePickerWindow
       Enabled         =   True
       Height          =   38
       Index           =   -2147483648
-      Indicator       =   0
-      Left            =   264
+      Indicator       =   1
+      Left            =   317
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -1093,7 +1093,7 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   40
       Tooltip         =   ""
-      Top             =   420
+      Top             =   451
       Visible         =   True
       Width           =   73
       _mPanelIndex    =   -1
@@ -1107,8 +1107,8 @@ Begin WebDialog DatePickerWindow
       Enabled         =   True
       Height          =   38
       Index           =   -2147483648
-      Indicator       =   0
-      Left            =   82
+      Indicator       =   1
+      Left            =   48
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -1119,22 +1119,22 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   41
       Tooltip         =   ""
-      Top             =   420
+      Top             =   450
       Visible         =   True
       Width           =   73
       _mPanelIndex    =   -1
    End
-   Begin WebButton CurrentMonthButton
+   Begin WebButton TodayButton
       AllowAutoDisable=   False
       Cancel          =   False
-      Caption         =   "-"
+      Caption         =   "Today"
       ControlID       =   ""
       Default         =   False
       Enabled         =   True
       Height          =   38
       Index           =   -2147483648
-      Indicator       =   0
-      Left            =   172
+      Indicator       =   1
+      Left            =   141
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -1145,9 +1145,293 @@ Begin WebDialog DatePickerWindow
       Scope           =   0
       TabIndex        =   42
       Tooltip         =   ""
-      Top             =   420
+      Top             =   450
       Visible         =   True
-      Width           =   73
+      Width           =   158
+      _mPanelIndex    =   -1
+   End
+   Begin WebButton CloseButton
+      AllowAutoDisable=   False
+      Cancel          =   False
+      Caption         =   "X"
+      ControlID       =   ""
+      Default         =   False
+      Enabled         =   True
+      Height          =   54
+      Index           =   -2147483648
+      Indicator       =   4
+      Left            =   0
+      LockBottom      =   True
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      LockVertical    =   False
+      Scope           =   0
+      TabIndex        =   43
+      Tooltip         =   ""
+      Top             =   0
+      Visible         =   True
+      Width           =   37
+      _mPanelIndex    =   -1
+   End
+   Begin WebLabel DayLabel0
+      Bold            =   False
+      ControlID       =   ""
+      Enabled         =   True
+      FontName        =   ""
+      FontSize        =   0.0
+      Height          =   29
+      Index           =   -2147483648
+      Indicator       =   ""
+      Italic          =   False
+      Left            =   30
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      TabIndex        =   44
+      TabStop         =   True
+      Text            =   "S"
+      TextAlignment   =   2
+      TextColor       =   &c00000000
+      Tooltip         =   ""
+      Top             =   96
+      Underline       =   False
+      Visible         =   True
+      Width           =   50
+      _mPanelIndex    =   -1
+   End
+   Begin WebLabel DayLabel1
+      Bold            =   False
+      ControlID       =   ""
+      Enabled         =   True
+      FontName        =   ""
+      FontSize        =   0.0
+      Height          =   29
+      Index           =   -2147483648
+      indicator       =   0
+      Italic          =   False
+      Left            =   82
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      PanelIndex      =   0
+      Scope           =   0
+      TabIndex        =   45
+      TabStop         =   True
+      Text            =   "M"
+      TextAlignment   =   2
+      TextColor       =   &c00000000
+      Tooltip         =   ""
+      Top             =   96
+      Underline       =   False
+      Visible         =   True
+      Width           =   50
+      _mPanelIndex    =   -1
+   End
+   Begin WebLabel DayLabel2
+      Bold            =   False
+      ControlID       =   ""
+      Enabled         =   True
+      FontName        =   ""
+      FontSize        =   0.0
+      Height          =   29
+      Index           =   -2147483648
+      indicator       =   0
+      Italic          =   False
+      Left            =   134
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      PanelIndex      =   0
+      Scope           =   0
+      TabIndex        =   46
+      TabStop         =   True
+      Text            =   "T"
+      TextAlignment   =   2
+      TextColor       =   &c00000000
+      Tooltip         =   ""
+      Top             =   96
+      Underline       =   False
+      Visible         =   True
+      Width           =   50
+      _mPanelIndex    =   -1
+   End
+   Begin WebLabel DayLabel3
+      Bold            =   False
+      ControlID       =   ""
+      Enabled         =   True
+      FontName        =   ""
+      FontSize        =   0.0
+      Height          =   29
+      Index           =   -2147483648
+      indicator       =   0
+      Italic          =   False
+      Left            =   186
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      PanelIndex      =   0
+      Scope           =   0
+      TabIndex        =   47
+      TabStop         =   True
+      Text            =   "W"
+      TextAlignment   =   2
+      TextColor       =   &c00000000
+      Tooltip         =   ""
+      Top             =   96
+      Underline       =   False
+      Visible         =   True
+      Width           =   50
+      _mPanelIndex    =   -1
+   End
+   Begin WebLabel DayLabel5
+      Bold            =   False
+      ControlID       =   ""
+      Enabled         =   True
+      FontName        =   ""
+      FontSize        =   0.0
+      Height          =   29
+      Index           =   -2147483648
+      indicator       =   0
+      Italic          =   False
+      Left            =   290
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      PanelIndex      =   0
+      Scope           =   0
+      TabIndex        =   48
+      TabStop         =   True
+      Text            =   "F"
+      TextAlignment   =   2
+      TextColor       =   &c00000000
+      Tooltip         =   ""
+      Top             =   96
+      Underline       =   False
+      Visible         =   True
+      Width           =   50
+      _mPanelIndex    =   -1
+   End
+   Begin WebLabel DayLabel4
+      Bold            =   False
+      ControlID       =   ""
+      Enabled         =   True
+      FontName        =   ""
+      FontSize        =   0.0
+      Height          =   29
+      Index           =   -2147483648
+      indicator       =   0
+      Italic          =   False
+      Left            =   238
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      PanelIndex      =   0
+      Scope           =   0
+      TabIndex        =   49
+      TabStop         =   True
+      Text            =   "T"
+      TextAlignment   =   2
+      TextColor       =   &c00000000
+      Tooltip         =   ""
+      Top             =   96
+      Underline       =   False
+      Visible         =   True
+      Width           =   50
+      _mPanelIndex    =   -1
+   End
+   Begin WebLabel DayLabel6
+      Bold            =   False
+      ControlID       =   ""
+      Enabled         =   True
+      FontName        =   ""
+      FontSize        =   0.0
+      Height          =   29
+      Index           =   -2147483648
+      indicator       =   0
+      Italic          =   False
+      Left            =   342
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      PanelIndex      =   0
+      Scope           =   0
+      TabIndex        =   50
+      TabStop         =   True
+      Text            =   "S"
+      TextAlignment   =   2
+      TextColor       =   &c00000000
+      Tooltip         =   ""
+      Top             =   96
+      Underline       =   False
+      Visible         =   True
+      Width           =   50
+      _mPanelIndex    =   -1
+   End
+   Begin WebButton LanguageButton
+      AllowAutoDisable=   False
+      Cancel          =   False
+      Caption         =   "EN"
+      ControlID       =   ""
+      Default         =   False
+      Enabled         =   True
+      Height          =   32
+      Index           =   -2147483648
+      Indicator       =   7
+      Left            =   377
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      PanelIndex      =   0
+      Scope           =   0
+      TabIndex        =   51
+      TabStop         =   True
+      Tooltip         =   ""
+      Top             =   2
+      Visible         =   True
+      Width           =   45
       _mPanelIndex    =   -1
    End
 End
@@ -1187,25 +1471,7 @@ End
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
-		Sub Constructor()
-		  // Calling the overridden superclass constructor.
-		  // Note that this may need modifications if there are multiple constructor choices.
-		  // Possible constructor calls:
-		  // Constructor() -- From WebView
-		  // Constructor() -- From WebUIControl
-		  // Constructor() -- From WebControl
-		  
-		  mSelectedDate = DateTime.Now // today
-		  mInitialDate = mSelectedDate
-		  mInitialDay = mInitialDate.Day
-		  
-		  Super.Constructor
-		  
-		End Sub
-	#tag EndMethod
-
-	#tag Method, Flags = &h0
-		Sub Constructor(d as DateTime)
+		Sub Constructor(d as DateTime, lan as string = "EN")
 		  // Calling the overridden superclass constructor.
 		  // Note that this may need modifications if there are multiple constructor choices.
 		  // Possible constructor calls:
@@ -1213,6 +1479,7 @@ End
 		  // Constructor() -- From WebUIControl
 		  // Constructor() -- From WebControl
 		  //Var d As DateTime = DateTime.Now
+		  language = lan
 		  mSelectedDate = d  // starts with the date provided
 		  mInitialDate = mSelectedDate
 		  mInitialDay = mInitialDate.Day
@@ -1221,11 +1488,34 @@ End
 		End Sub
 	#tag EndMethod
 
+	#tag Method, Flags = &h0
+		Sub Constructor(lan as string = "EN")
+		  // Calling the overridden superclass constructor.
+		  // Note that this may need modifications if there are multiple constructor choices.
+		  // Possible constructor calls:
+		  // Constructor() -- From WebView
+		  // Constructor() -- From WebUIControl
+		  // Constructor() -- From WebControl
+		  
+		  Language = lan
+		  mSelectedDate = DateTime.Now // today because no date provided
+		  mInitialDate = mSelectedDate
+		  mInitialDay = mInitialDate.Day
+		  
+		  Super.Constructor
+		  
+		End Sub
+	#tag EndMethod
+
 	#tag Method, Flags = &h21
 		Private Sub LoadMonthPopup()
 		  Var months() As String
-		  months = Array("January","February","March","April","May","June","July","August","September","October","November","December")
-		  //months = Array("Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre")
+		  If Language = "FR" Then
+		    months = Array("Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre")
+		  Else
+		    months = Array("January","February","March","April","May","June","July","August","September","October","November","December")
+		  End If
+		  
 		  MonthPopup.RemoveAllRows
 		  For Each month As String In months 
 		    MonthPopup.AddRow month
@@ -1246,9 +1536,9 @@ End
 
 	#tag Method, Flags = &h21
 		Private Sub ResetButtonsList()
+		  
+		  // put the buttonlist in an array
 		  Redim ButtonsList(-1)
-		  
-		  
 		  ButtonsList.Add button0
 		  ButtonsList.Add button1
 		  ButtonsList.Add button2
@@ -1294,6 +1584,44 @@ End
 		    ButtonsList(i).Style.Value("width")="50px"
 		    //ButtonsList(i).Style.Value("font-size") = "0.75em"
 		  Next
+		  
+		  // put the dayButtons in an array
+		  Redim DayButtonsList(-1)
+		  DayButtonsList.add DayLabel0
+		  DayButtonsList.add DayLabel1
+		  DayButtonsList.add DayLabel2
+		  DayButtonsList.add DayLabel3
+		  DayButtonsList.add DayLabel4
+		  DayButtonsList.add DayLabel5
+		  DayButtonsList.add DayLabel6
+		  
+		  // initial of the button
+		  Var days() As String
+		  If language = "FR" Then
+		    days = Array("D","L","M","M","J","V","S")
+		    label1.Text = "Choisissez une date"
+		    TodayButton.Caption = "Aujourd'hui"
+		    LanguageButton.Caption = "EN"
+		  Else
+		    days = Array("S","M","T","W","T","F","S")
+		    label1.Text = "Pick a date"
+		    TodayButton.Caption = "Today"
+		    LanguageButton.Caption = "FR"
+		  End If
+		  
+		  For j As Integer = 0 To 6
+		    DayButtonsList(j).Text = days(j)
+		    DayButtonsList(j).Style.BackgroundColor = Color.RGB(230,230,250)
+		  Next
+		  
+		  // language button 
+		  LanguageButton.Style.value("font-size") = "small"
+		  
+		  MonthPopup.Style.BackgroundColor = Color.RGB(68,110,155)
+		  MonthPopup.Style.ForegroundColor = Color.White
+		  YearPopup.Style.BackgroundColor = Color.RGB(68,110,155)
+		  YearPopup.Style.ForegroundColor = Color.White
+		  
 		End Sub
 	#tag EndMethod
 
@@ -1380,6 +1708,10 @@ End
 		ButtonsList() As DateButton
 	#tag EndProperty
 
+	#tag Property, Flags = &h21
+		Private DayButtonsList() As WebLabel
+	#tag EndProperty
+
 	#tag ComputedProperty, Flags = &h0
 		#tag Getter
 			Get
@@ -1398,6 +1730,10 @@ End
 
 	#tag Property, Flags = &h0
 		IsDatePicked As Boolean
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		Language As string = "EN"
 	#tag EndProperty
 
 	#tag Property, Flags = &h21
@@ -1794,19 +2130,48 @@ End
 		End Sub
 	#tag EndEvent
 #tag EndEvents
-#tag Events CurrentMonthButton
+#tag Events TodayButton
 	#tag Event
 		Sub Pressed()
-		  //User wants to move to current month
+		  //User wants to move to today
 		  
-		  mSelectedDate = New DateTime(datetime.now.Year, DateTime.Now.Month, 1)
+		  mSelectedDate = New DateTime(DateTime.Now)
 		  
-		  If mInitialDate.Year = mSelectedDate.Year And mInitialDate.Month = mSelectedDate.Month  Then
-		    mInitialDay = mInitialDate.day
+		  //MonthPopup.SelectedRowIndex = mSelectedDate.Month -1
+		  
+		  // we update minitial day
+		  mInitialDate = mSelectedDate
+		  mInitialDay = mInitialDate.Day
+		  
+		  
+		  Update
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events CloseButton
+	#tag Event
+		Sub Pressed()
+		  Self.close
+		  
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events LanguageButton
+	#tag Event
+		Sub Pressed()
+		  // change language
+		  
+		  
+		  If Me.Caption = "FR" Then
+		    Me.caption ="EN"
+		    Language = "FR"
 		  Else
-		    mInitialDay = 99 // we have changed the month and the year so forget the highlight of the day initilay sent
-		  End If 
+		    Me.Caption = "FR"
+		    Language = "EN"
+		  End If
 		  
+		  LoadMonthPopup
+		  ResetButtonsList
 		  Update
 		End Sub
 	#tag EndEvent
@@ -2057,5 +2422,13 @@ End
 		InitialValue=""
 		Type="Boolean"
 		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="Language"
+		Visible=false
+		Group="Behavior"
+		InitialValue="EN"
+		Type="string"
+		EditorType="MultiLineEditor"
 	#tag EndViewProperty
 #tag EndViewBehavior
