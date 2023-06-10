@@ -2,6 +2,19 @@
 Protected Class DateButton
 Inherits WebButton
 	#tag CompatibilityFlags = API2Only
+	#tag Method, Flags = &h0
+		Sub Constructor()
+		  // Calling the overridden superclass constructor.
+		  // Note that this may need modifications if there are multiple constructor choices.
+		  // Possible constructor calls:
+		  // Constructor() -- From WebUIControl
+		  // Constructor() -- From WebControl
+		  Super.Constructor
+		  
+		End Sub
+	#tag EndMethod
+
+
 	#tag ViewBehavior
 		#tag ViewProperty
 			Name="Index"

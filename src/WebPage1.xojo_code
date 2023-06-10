@@ -5,7 +5,7 @@ Begin WebPage WebPage1
    ControlCount    =   0
    ControlID       =   ""
    Enabled         =   False
-   Height          =   400
+   Height          =   448
    ImplicitInstance=   True
    Index           =   -2147483648
    Indicator       =   0
@@ -33,14 +33,14 @@ Begin WebPage WebPage1
    Begin WebButton PickDateButton
       AllowAutoDisable=   False
       Cancel          =   False
-      Caption         =   "find a date"
+      Caption         =   "find date with today"
       ControlID       =   ""
       Default         =   True
       Enabled         =   True
       Height          =   38
       Index           =   -2147483648
       Indicator       =   1
-      Left            =   45
+      Left            =   38
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -51,7 +51,7 @@ Begin WebPage WebPage1
       Scope           =   0
       TabIndex        =   0
       Tooltip         =   ""
-      Top             =   63
+      Top             =   20
       Visible         =   True
       Width           =   183
       _mPanelIndex    =   -1
@@ -65,6 +65,7 @@ Begin WebPage WebPage1
       Index           =   -2147483648
       Indicator       =   0
       IsDatePicked    =   False
+      Language        =   "EN"
       LayoutDirection =   0
       LayoutType      =   0
       Left            =   79
@@ -79,7 +80,7 @@ Begin WebPage WebPage1
       StartYear       =   0
       TabIndex        =   1
       Tooltip         =   ""
-      Top             =   0
+      Top             =   24
       Visible         =   True
       Width           =   336
       _mDesignHeight  =   0
@@ -97,7 +98,7 @@ Begin WebPage WebPage1
       Hint            =   ""
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   290
+      Left            =   253
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -112,7 +113,7 @@ Begin WebPage WebPage1
       Text            =   ""
       TextAlignment   =   0
       Tooltip         =   ""
-      Top             =   63
+      Top             =   20
       Visible         =   True
       Width           =   140
       _mPanelIndex    =   -1
@@ -127,7 +128,7 @@ Begin WebPage WebPage1
       Index           =   -2147483648
       Indicator       =   0
       Italic          =   False
-      Left            =   290
+      Left            =   438
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -142,7 +143,7 @@ Begin WebPage WebPage1
       TextAlignment   =   0
       TextColor       =   &c00000000
       Tooltip         =   ""
-      Top             =   129
+      Top             =   20
       Underline       =   False
       Visible         =   True
       Width           =   364
@@ -158,7 +159,7 @@ Begin WebPage WebPage1
       Height          =   38
       Index           =   -2147483648
       Indicator       =   1
-      Left            =   45
+      Left            =   36
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -169,7 +170,7 @@ Begin WebPage WebPage1
       Scope           =   0
       TabIndex        =   4
       Tooltip         =   ""
-      Top             =   207
+      Top             =   98
       Visible         =   True
       Width           =   256
       _mPanelIndex    =   -1
@@ -185,7 +186,7 @@ Begin WebPage WebPage1
       Hint            =   ""
       Index           =   -2147483648
       Indicator       =   0
-      Left            =   152
+      Left            =   309
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -200,9 +201,74 @@ Begin WebPage WebPage1
       Text            =   ""
       TextAlignment   =   0
       Tooltip         =   ""
-      Top             =   266
+      Top             =   98
       Visible         =   True
       Width           =   140
+      _mPanelIndex    =   -1
+   End
+   Begin cls_container_DatePicker DatePicker1
+      Caption         =   ""
+      ControlCount    =   0
+      ControlID       =   ""
+      Enabled         =   True
+      Height          =   40
+      Index           =   -2147483648
+      Indicator       =   0
+      IsAValidDate    =   False
+      LayoutDirection =   0
+      LayoutType      =   0
+      Left            =   45
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      PanelIndex      =   0
+      Scope           =   0
+      ScrollDirection =   0
+      TabIndex        =   6
+      TabStop         =   True
+      Tooltip         =   ""
+      Top             =   182
+      Visible         =   True
+      Width           =   150
+      _mDesignHeight  =   0
+      _mDesignWidth   =   0
+      _mPanelIndex    =   -1
+   End
+   Begin WebLabel Label2
+      Bold            =   False
+      ControlID       =   ""
+      Enabled         =   True
+      FontName        =   ""
+      FontSize        =   0.0
+      Height          =   38
+      Index           =   -2147483648
+      Indicator       =   0
+      Italic          =   False
+      Left            =   309
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      PanelIndex      =   0
+      Scope           =   0
+      TabIndex        =   7
+      TabStop         =   True
+      Text            =   "Untitled"
+      TextAlignment   =   0
+      TextColor       =   &c00000000
+      Tooltip         =   ""
+      Top             =   182
+      Underline       =   False
+      Visible         =   True
+      Width           =   364
       _mPanelIndex    =   -1
    End
 End
@@ -261,6 +327,21 @@ End
 		  Catch e As InvalidArgumentException
 		    MessageBox("Your date is not valid !! ")
 		  End Try
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events DatePicker1
+	#tag Event
+		Sub Opening()
+		  Var d As DateTime = DateTime.Now
+		  TextField2.Text = d.SQLDate
+		  
+		End Sub
+	#tag EndEvent
+	#tag Event
+		Sub DateHasChanged()
+		  
+		  WebPage1.Label2.Text = "You have selected the date " + me.TextField1.Text
 		End Sub
 	#tag EndEvent
 #tag EndEvents

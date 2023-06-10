@@ -1184,7 +1184,7 @@ Begin WebDialog DatePickerWindow
       FontSize        =   0.0
       Height          =   29
       Index           =   -2147483648
-      Indicator       =   ""
+      Indicator       =   0
       Italic          =   False
       Left            =   30
       LockBottom      =   False
@@ -1197,7 +1197,6 @@ Begin WebDialog DatePickerWindow
       Multiline       =   False
       Scope           =   0
       TabIndex        =   44
-      TabStop         =   True
       Text            =   "S"
       TextAlignment   =   2
       TextColor       =   &c00000000
@@ -1216,7 +1215,7 @@ Begin WebDialog DatePickerWindow
       FontSize        =   0.0
       Height          =   29
       Index           =   -2147483648
-      indicator       =   0
+      Indicator       =   0
       Italic          =   False
       Left            =   82
       LockBottom      =   False
@@ -1227,10 +1226,8 @@ Begin WebDialog DatePickerWindow
       LockTop         =   True
       LockVertical    =   False
       Multiline       =   False
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   45
-      TabStop         =   True
       Text            =   "M"
       TextAlignment   =   2
       TextColor       =   &c00000000
@@ -1249,7 +1246,7 @@ Begin WebDialog DatePickerWindow
       FontSize        =   0.0
       Height          =   29
       Index           =   -2147483648
-      indicator       =   0
+      Indicator       =   0
       Italic          =   False
       Left            =   134
       LockBottom      =   False
@@ -1260,10 +1257,8 @@ Begin WebDialog DatePickerWindow
       LockTop         =   True
       LockVertical    =   False
       Multiline       =   False
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   46
-      TabStop         =   True
       Text            =   "T"
       TextAlignment   =   2
       TextColor       =   &c00000000
@@ -1282,7 +1277,7 @@ Begin WebDialog DatePickerWindow
       FontSize        =   0.0
       Height          =   29
       Index           =   -2147483648
-      indicator       =   0
+      Indicator       =   0
       Italic          =   False
       Left            =   186
       LockBottom      =   False
@@ -1293,10 +1288,8 @@ Begin WebDialog DatePickerWindow
       LockTop         =   True
       LockVertical    =   False
       Multiline       =   False
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   47
-      TabStop         =   True
       Text            =   "W"
       TextAlignment   =   2
       TextColor       =   &c00000000
@@ -1315,7 +1308,7 @@ Begin WebDialog DatePickerWindow
       FontSize        =   0.0
       Height          =   29
       Index           =   -2147483648
-      indicator       =   0
+      Indicator       =   0
       Italic          =   False
       Left            =   290
       LockBottom      =   False
@@ -1326,10 +1319,8 @@ Begin WebDialog DatePickerWindow
       LockTop         =   True
       LockVertical    =   False
       Multiline       =   False
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   48
-      TabStop         =   True
       Text            =   "F"
       TextAlignment   =   2
       TextColor       =   &c00000000
@@ -1348,7 +1339,7 @@ Begin WebDialog DatePickerWindow
       FontSize        =   0.0
       Height          =   29
       Index           =   -2147483648
-      indicator       =   0
+      Indicator       =   0
       Italic          =   False
       Left            =   238
       LockBottom      =   False
@@ -1359,10 +1350,8 @@ Begin WebDialog DatePickerWindow
       LockTop         =   True
       LockVertical    =   False
       Multiline       =   False
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   49
-      TabStop         =   True
       Text            =   "T"
       TextAlignment   =   2
       TextColor       =   &c00000000
@@ -1381,7 +1370,7 @@ Begin WebDialog DatePickerWindow
       FontSize        =   0.0
       Height          =   29
       Index           =   -2147483648
-      indicator       =   0
+      Indicator       =   0
       Italic          =   False
       Left            =   342
       LockBottom      =   False
@@ -1392,10 +1381,8 @@ Begin WebDialog DatePickerWindow
       LockTop         =   True
       LockVertical    =   False
       Multiline       =   False
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   50
-      TabStop         =   True
       Text            =   "S"
       TextAlignment   =   2
       TextColor       =   &c00000000
@@ -1424,10 +1411,8 @@ Begin WebDialog DatePickerWindow
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      PanelIndex      =   0
       Scope           =   0
       TabIndex        =   51
-      TabStop         =   True
       Tooltip         =   ""
       Top             =   2
       Visible         =   True
@@ -1452,6 +1437,7 @@ End
 		  // reset buttons
 		  ResetButtonslist
 		  Update
+		  
 		End Sub
 	#tag EndEvent
 
@@ -1536,6 +1522,16 @@ End
 
 	#tag Method, Flags = &h21
 		Private Sub ResetButtonsList()
+		  //Var DButton As New DateButton
+		  //DButton.Caption= "5!"
+		  //DButton.LockLeft = True
+		  //DButton.LockTop = True
+		  //DButton.Style.Value("text-align")="center"
+		  //DButton.Style.Value("height")="50px"
+		  //DButton.Style.Value("width")="50px"
+		  //DButton.top = 393
+		  //DButton.Left=134
+		  //Self.AddControl(DButton)
 		  
 		  // put the buttonlist in an array
 		  Redim ButtonsList(-1)
